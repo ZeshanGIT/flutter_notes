@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: GoogleFonts.ubuntuTextTheme(),
-        primaryColor: Colors.deepPurple,
+        primaryColor: Colors.teal,
       ),
       debugShowCheckedModeBanner: false,
       routes: {

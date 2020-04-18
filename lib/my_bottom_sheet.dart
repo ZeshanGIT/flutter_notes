@@ -29,7 +29,7 @@ class MyBottomSheet extends StatelessWidget {
           ),
           SizedBox(height: 16),
           RaisedButton(
-            color: Colors.deepPurple,
+            color: Theme.of(context).primaryColor.withOpacity(0.2),
             shape: StadiumBorder(),
             onPressed: () {
               String title = _title.text;
@@ -44,7 +44,7 @@ class MyBottomSheet extends StatelessWidget {
             child: Text(
               'Add Note',
               style: TextStyle(
-                color: Colors.white,
+                color: Theme.of(context).primaryColor,
               ),
             ),
           )
