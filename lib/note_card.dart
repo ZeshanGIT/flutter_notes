@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notes/database/notes_collection.dart';
+import 'note_model.dart';
 
 class NoteCard extends StatelessWidget {
   final NoteModel noteModel;
@@ -12,12 +12,7 @@ class NoteCard extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 8),
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Colors.deepPurple.shade300,
-            Colors.deepPurple,
-          ],
-        ),
+        color: Theme.of(context).primaryColor.withOpacity(0.2),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -26,7 +21,7 @@ class NoteCard extends StatelessWidget {
           Text(
             noteModel.title,
             style: TextStyle(
-              color: Colors.white,
+              color: Theme.of(context).primaryColor,
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
@@ -35,7 +30,7 @@ class NoteCard extends StatelessWidget {
           Text(
             noteModel.description,
             style: TextStyle(
-              color: Colors.white,
+              color: Theme.of(context).primaryColor,
               fontSize: 18,
             ),
           ),
